@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="895B153E-E53F-4695-F82D-4D46E70A5232" name="Visitas">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>4BD28C4C-1B5B-CA11-C9BA-32B6BB9A394E</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_visita" id="5C0974B2-87F2-EFD9-BA51-B856F2CB2FE0">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>9D993C08-0410-6BC1-D178-5D9BAB2B88C3</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="4085B681-BD37-6BCA-9F6E-C576D183A232">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>18671682-6D21-139D-F2C7-0A991C5A5DC0</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ciudad" id="5DE25697-E290-03B6-437B-D8CAEC24B528">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>CEF33124-781D-2E28-C439-579EDD976D19</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="FD4ADC4F-E502-B601-2DB2-D82F7E2E9A77">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>7B32D42C-0155-DFD3-C0ED-C5461B8ECC0D</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resumen" id="1DF08CCD-4391-79CA-E125-22BF54088581">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>6F1E1E3E-6EB4-DB2F-A9FE-986FF6B8AF1D</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Observaciones" id="0E5279B1-9E29-20AE-39CE-DCD7B491D049">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>B4F39022-4692-CB96-3B83-01B4FED84014</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_id_cliente" id="0961A3FA-854E-886B-B16F-853139C8D05F">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>ECFE8F5C-296C-FF94-69A2-DFE75288F6A8</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D70AF098-2463-B27D-4F2D-6FC22B7C1AF3" referredColumn="9E827835-D650-8B3B-47CD-2613545AF263"/>
+</associations>
+</Column>
+<Column name="Empleado_id_empleado" id="7D831BF2-7DB6-4DBA-06B8-CF30090DFFFB">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>E1462549-06B7-D082-305A-6D84B648A072</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4EBA0E19-343F-8434-68DE-B45662F0B431" referredColumn="9393F936-68E1-7253-31A1-98C1C0FC79BE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4267791A-47AC-96CD-9AE5-08792CD2B558" name="Visitas_PK">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>0E28A8C8-2D2F-8C77-B09B-BE6B87EC6348</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C0974B2-87F2-EFD9-BA51-B856F2CB2FE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F71D530-9617-EB0C-D5E7-3CBA9AF69BFF" name="Visitas_Cliente_FK">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>A720C900-339F-349C-0896-75BCC5C228C1</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0961A3FA-854E-886B-B16F-853139C8D05F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71C35074-9B85-BCF6-BE7F-AEF2989F1F18" name="Visitas_Empleado_FK">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>B180A9E1-27A9-D5E4-0240-0583F0B16ADA</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D831BF2-7DB6-4DBA-06B8-CF30090DFFFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

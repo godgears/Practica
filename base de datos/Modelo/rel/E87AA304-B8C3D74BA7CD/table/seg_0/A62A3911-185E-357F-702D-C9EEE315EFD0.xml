@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A62A3911-185E-357F-702D-C9EEE315EFD0" name="Capacitaciones">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>AD6ED287-7D04-82BD-4881-B0FAD002B6E6</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_capacitacion" id="388D4922-0FB0-D189-8257-D8CB3BD19062">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>B9ABFEF8-66C8-246B-F566-B6D6542D8F1F</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="4EB57315-F6CD-A6D9-4C94-772E35B46729">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>7514C6AE-EBB9-25FB-2F20-C9223A7A979E</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hora" id="5FE378D7-F6B8-CE55-EE88-B7456D3FF717">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>857D4869-3D53-3CA9-D4B5-87AE52AE88FB</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NumAsistentes" id="DCD4E09C-17ED-6E9E-C9D3-C77F0BD154E5">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>3A4387D3-812E-8CB1-9186-31F0B8273B81</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Visitas_id_visita" id="F0D3401B-791A-349D-56A5-D15D6BDA7949">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>019EE890-1AB7-72B7-17E8-280D7862E754</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1052EAAE-C4C0-42E2-DC75-5AF5BFE745DA" referredColumn="5C0974B2-87F2-EFD9-BA51-B856F2CB2FE0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19673332-3AA3-6CBA-6346-F8FDEA1A3209" name="Capacitaciones_PK">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>465E6730-5FA4-CB59-5A00-C6558DF02B1E</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="388D4922-0FB0-D189-8257-D8CB3BD19062"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC43975A-B79B-8668-726B-336A7B648DD6" name="Capacitaciones_Visitas_FK">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>EED7CBBF-B44B-B60F-0D85-3A472C0440D3</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0D3401B-791A-349D-56A5-D15D6BDA7949"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89DBF346-75AC-671A-4311-13B813998A52" name="Chequeo">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>C5345B76-9093-6A86-ACC1-3B9488A59BE6</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_chequeo" id="B1B4E69C-B503-8F42-AC75-53FECA440829">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>B0663B0A-7076-789C-D846-271F689784A2</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Detalle" id="BBF88496-FE22-76FF-E5B6-C6CBC5EAA628">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>582B44D2-2BDD-774F-3AE2-1A85A9ECAF49</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="9EA631A2-B81A-C679-BAC4-33CDB62F5D60">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>F9BE7939-26DC-6AF1-5542-3D08031EBB2D</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Visitas_id_visita" id="E98E8262-D6A1-7568-2FB5-BFD0C15323D2">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>1F583D06-CA91-12F6-CB5A-4F9F06F62314</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D470E5D8-48BB-2354-0776-299C69F30D9C" referredColumn="5C0974B2-87F2-EFD9-BA51-B856F2CB2FE0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6D8189C4-B62B-9409-82D9-7DE01F5ABB2F" name="Chequeo_PK">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>F86F17DA-BC4F-9BBE-4C5A-743160B5331E</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1B4E69C-B503-8F42-AC75-53FECA440829"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76522C1C-6E75-A452-5CF9-457E576745A0" name="Chequeo_Visitas_FK">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-07-03 00:34:06 UTC</createdTime>
+<generatorID>943DC086-BD21-596B-F19F-6B41A739E39C</generatorID>
+<ownerDesignName>Modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E98E8262-D6A1-7568-2FB5-BFD0C15323D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
