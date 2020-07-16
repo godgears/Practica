@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;  
 import org.springframework.ui.Model;  
 import org.springframework.web.bind.annotation.ModelAttribute;    
-import org.springframework.web.bind.annotation.PathVariable;    
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;    
 import org.springframework.web.bind.annotation.RequestMethod;
 //import org.springframework.context.ApplicationContext;
@@ -21,7 +21,6 @@ public class ClienteControlador {
 
 	@Autowired
 	ClienteDao cliedao;
-	
 	
 	static Logger log = Logger.getLogger(ClienteControlador.class.getName());
 	
@@ -68,5 +67,5 @@ public class ClienteControlador {
         log.warn("Cliente eliminado");
         return "redirect:/ListadoClientes";
     }
-    
+
 }

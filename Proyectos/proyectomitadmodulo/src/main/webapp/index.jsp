@@ -5,8 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Inicio</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <style>
 header{
@@ -28,29 +27,22 @@ background-image: url("http://www.segval.cl/wp-content/uploads/2014/05/grunge_wa
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="index">Inicio</a>
+      <a class="navbar-brand" href="index.jsp">Inicio</a>
       <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
         <li class="nav-item">
-         <a class="nav-link" href="<%=request.getContextPath()%>/ListadoClientes">Informacion Clientes</a>
+         <a class="nav-link" href="ListadoClientes">Informacion Clientes</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="/ListadoEmpleados">Informacion Profesionales</a>
-        </li>
-        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-            Reportes
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="ListaReporteGeneral">Reporte General</a></li>
-          </ul>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="ListarAsesoria">Asesoria Especial</a>
+          <a class="nav-link" href="ListadoEmpleados">Informacion Profesionales</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="ListarAccidente">Accidentes</a>
+            <a class="nav-link" href="ListaReporteGeneral">Reporte General</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ListadoAsesoria">Asesoria Especial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="MostrarAccidente">Accidentes</a>
         </li>
       </ul>
     </div>
@@ -69,19 +61,16 @@ background-image: url("http://www.segval.cl/wp-content/uploads/2014/05/grunge_wa
   <div class="row">
     <div class="col-sm text-center">
      <img class="img-thumbnail" src="http://www.haleco.es/wp-content/uploads/2014/07/PAC_STG11_21A-250x250.jpeg"><br>
-	<a class="text-center btn btn-dark btn-lg" href="/ListadoClientes" role="button">Actividades</a>
+	<a class="text-center btn btn-dark btn-lg" href="MostrarTasa" role="button">Listado Tasas</a>
 
     </div>
     <div class="col-sm text-center">
      	<img class="img-thumbnail" src="http://www.haleco.es/wp-content/uploads/2014/07/PAC_STG14_24A-250x250.jpeg" ><br>
-		<a class="btn btn-dark btn-lg" href="/FormularioAccidente.jsp" role="button">Ingresar Accidente</a>
+		<a class="btn btn-dark btn-lg" href="FormularioAccidente" role="button">Ingresar Accidente</a>
     </div>
     <div class="col-sm text-center">
      	<img class="img-thumbnail" src="http://www.haleco.es/wp-content/uploads/2014/07/PAC_STG10_20A-250x250.jpeg" ><br>
-		<a class="btn btn-dark btn-lg" href="/ListadoPagosClientes" role="button">Pagos</a>
-    </div>
-      <div class="col-sm text-center">
-		<a href="welcome.html">Click here to See Welcome Message... </a>		
+		<a class="btn btn-dark btn-lg" href="ListadoPago" role="button">Pagos</a>
     </div>
   </div>
  </div>
@@ -135,7 +124,7 @@ background-image: url("http://www.segval.cl/wp-content/uploads/2014/05/grunge_wa
   </footer>
 
 
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script></body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </html>

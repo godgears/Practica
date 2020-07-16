@@ -13,13 +13,14 @@
 <body>
 	<div class="container">
 		<h1>Editar cliente</h1>
-		<div class"row">
+		<div class="row">
 		<div class="container col-10">
-			<form:form method="post" action="GuardarEditarCliente">
+		<form:form method="post" action="/proyectomitadmodulo/GuardarEditarCliente">
 			<div class="form-group">
 			<form:hidden path="id_cliente" class="col-8"/><br /><br />
 			</div>
 			<label>Nombre: </label><br />
+			<div class="form-group">
 			<form:input type="text" path="nombre" class="col-8"/><br />
 			</div>
 			<div class="form-group">
@@ -42,15 +43,12 @@
 			<label>Cantidad Trabajadores: </label><br />
 			<form:input type="number" path="cantidadtrabajadores" class="col-8"/><br /> 
 			</div>
-			<input type="submit" value="Agregar cliente" class="btn btn-success"/>
-			<a href="/ListadoClientes" class="btn btn-primary">Listar cliente</a>
-		</form:form>
-					<input type="submit" value="Editar cliente" class="btn btn-success" />
-					<a href="<%=request.getContextPath()%>/ListadoClientes" class="btn btn-primary">Listar cliente</a>
+			<input type="submit" value="Guardar Cambios" class="btn btn-success"/>
+			<a href="ListadoClientes.jsp" class="btn btn-primary">Listado Clientes</a>
 			
+		</form:form>
 		</div>
-		</div>
-
+	</div>
 	</div>
 </body>
 </html>

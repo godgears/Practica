@@ -34,7 +34,7 @@
 		<property name="template" ref="jt"></property>    
 	</bean>
 	
-	<bean id="daoemp" class="com.acc.dao.EmpleadoDao">    
+	<bean id="empdao" class="com.acc.dao.EmpleadoDao">    
 		<property name="template" ref="jt"></property>    
 	</bean>
 
@@ -42,6 +42,28 @@
 		<property name="template" ref="jt"></property>    
 	</bean>
 	
+	<bean id="actdao" class="com.acc.dao.ActividadesDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
 	
+	<bean id="ulpagodao" class="com.acc.dao.UltimoPagoDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
+	
+	<bean id="accdao" class="com.acc.dao.AccidenteDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
+	
+	<bean id="tasadao" class="com.acc.dao.TasaDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
+	
+	<bean id="repodao" class="com.acc.dao.ReporteDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
+	
+	<bean id="daoasesoria" class="com.acc.dao.AsesoriaDao">    
+		<property name="template" ref="jt"></property>    
+	</bean>
 	
 </beans>  

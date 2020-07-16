@@ -18,12 +18,12 @@ public class ClienteDao {
 	}
 	
 	public int save(Cliente c){    
-	    String sql="insert into Cliente (nombre,telefono,correoelectronico,rubro,direccion) values('"+c.getNombre()+"',"+c.getTelefono()+",'"+c.getCorreoelectronico()+"','"+c.getRubro()+"','"+c.getDireccion()+"')";
+	    String sql="insert into Cliente (nombre,telefono,correoelectronico,rubro,direccion,cantidadtrabajadores) values('"+c.getNombre()+"',"+c.getTelefono()+",'"+c.getCorreoelectronico()+"','"+c.getRubro()+"','"+c.getDireccion()+"','"+c.getCantidadtrabajadores()+"')";
 	    return template.update(sql);
 	}
 	
 	public int update(Cliente c){    
-	    String sql="update Cliente set nombre='"+c.getNombre()+"', telefono="+c.getTelefono()+",correoelectronico='"+c.getCorreoelectronico()+"', rubro='"+c.getRubro()+"', direccion='"+c.getDireccion()+"' where id_cliente="+c.getId_cliente()+"";
+	    String sql="update Cliente set nombre='"+c.getNombre()+"', telefono="+c.getTelefono()+",correoelectronico='"+c.getCorreoelectronico()+"', rubro='"+c.getRubro()+"', direccion='"+c.getDireccion()+"', cantidadtrabajadores='"+c.getCantidadtrabajadores()+"' where id_cliente="+c.getId_cliente()+"";
 	    return template.update(sql);    
 	}   
 	

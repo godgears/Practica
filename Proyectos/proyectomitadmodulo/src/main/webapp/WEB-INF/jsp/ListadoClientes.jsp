@@ -34,23 +34,21 @@
 		<td class="table-light">${cliente.getDireccion()}</td>
 		<td class="table-light">${cliente.getCantidadtrabajadores()}</td>
 		<td class="table-light" colspan="2">
-			<a title="Eliminar Cliente" href="<%=request.getContextPath()%>/EliminarCliente?id=${cliente.getId_cliente()}" class="btn  btn-danger"><i class="fas fa-trash"></i></a>&nbsp;
+			<a title="Eliminar Cliente" href="<%=request.getContextPath()%>/EliminarCliente/${cliente.getId_cliente()}" class="btn  btn-danger"><i class="fas fa-trash"></i></a>&nbsp;
 			<a title="Editar Cliente" href="<%=request.getContextPath()%>/EditarCliente/${cliente.getId_cliente()}" class="btn btn-warning"><i class="fas fa-pencil-alt"></i></a>&nbsp;
-			<!-- <a title="Ver Listado Pagos Cliente" href="/ListadoPagoCliente?id=${cliente.getId_cliente()}" class="btn btn-info"><i class="fas fa-dollar-sign"></i></a> <br>
-			<a title="Ver Ultimo Pago" href="/UltimoPago?id=${cliente.getId_cliente()}" class="btn btn-info"><i class="fas fa-search-dollar"></i></a>
-			<a title="Agregar Asesoria a Cliente" href="/AgregarAsesoria" class="btn btn-info"><i class="fas fa-clipboard-list"></i></a>&nbsp;
-			<a title="Ver Reporte Cliente" href="/ListadoReportesClientes?idc=${cliente.getId_cliente()}" class="btn btn-info"><i class="fas fa-check"></i></a>&nbsp;
-			<a title="Ver Actividad Cliente" href="/ListarActividades?id=${cliente.getId_cliente()}" class="btn btn-info"><i class="fas fa-th-list"></i></a>&nbsp;	
-			 -->
+			<a title="Ver Actividad Cliente" href="<%=request.getContextPath()%>/VerActividades/${cliente.getId_cliente()}" class="btn btn-info"><i class="fas fa-th-list"></i></a>&nbsp;
+			<a title="Ver Ultimo Pago" href="<%=request.getContextPath()%>/UltimoPago/${cliente.getId_cliente()}" class="btn btn-info"><i class="fas fa-search-dollar"></i></a>
+			<a title="Ver Reporte Cliente" href="ListadoReporteCliente/${cliente.getId_cliente()}" class="btn btn-info"><i class="fas fa-check"></i></a>&nbsp;
+			<a title="Ver Listado Pagos Cliente" href="ListadoPagoCliente/${cliente.getId_cliente()}" class="btn btn-info"><i class="fas fa-dollar-sign"></i></a> <br>
 		</td>
 	</tr>
 	</c:forEach>
 </table>
 <br/>
-<a href="<%=request.getContextPath()%>/AgregarCliente" class="btn btn-success"><i class="fas fa-user-plus"></i></a>
+<a href="<%=request.getContextPath()%>/CrearCliente" class="btn btn-success"><i class="fas fa-user-plus"></i></a>
 <a href="<%=request.getContextPath()%>/ListadoClientes" class="btn btn-primary"><i class="fas fa-sync-alt"></i></a>
-<a title="Ver Listado Pagos Cliente" href="/ListadoPagosClientes" class="btn btn-info"><i class="fas fa-dollar-sign"></i></a>
-<a href="/index.jsp" class="btn btn-success"><i class="fas fa-home"></i></a>
+<a title="Ver Listado Pagos Cliente" href="<%=request.getContextPath()%>/ListadoPago" class="btn btn-info"><i class="fas fa-dollar-sign"></i></a>
+<a href="<%=request.getContextPath()%>/index.jsp" class="btn btn-success"><i class="fas fa-home"></i></a>
 </div>
 </body>
 </html>

@@ -6,7 +6,7 @@ public class Capacitacion {
 	private String fecha;
 	private String hora;
 	private int numasistentes;
-	private int visitas_idvisita;
+	private int visitas_id_visita;
 	
 	
 	
@@ -16,13 +16,13 @@ public class Capacitacion {
 
 	
 
-	public Capacitacion(int id_capacitacion, String fecha, String hora, int numasistentes, int visitas_idvisita) {
+	public Capacitacion(int id_capacitacion, String fecha, String hora, int numasistentes, int visitas_id_visita) {
 		super();
 		this.id_capacitacion = id_capacitacion;
 		this.fecha = fecha;
 		this.hora = hora;
 		this.numasistentes = numasistentes;
-		this.visitas_idvisita = visitas_idvisita;
+		this.visitas_id_visita = visitas_id_visita;
 	}
 
 
@@ -73,16 +73,14 @@ public class Capacitacion {
 		this.numasistentes = numasistentes;
 	}
 
-
-
-	public int getVisitas_idvisita() {
-		return visitas_idvisita;
+	public int getVisitas_id_visita() {
+		return visitas_id_visita;
 	}
 
 
 
-	public void setVisitas_idvisita(int visitas_idvisita) {
-		this.visitas_idvisita = visitas_idvisita;
+	public void setVisitas_id_visita(int visitas_id_visita) {
+		this.visitas_id_visita = visitas_id_visita;
 	}
 
 
@@ -90,7 +88,7 @@ public class Capacitacion {
 	@Override
 	public String toString() {
 		return "Capacitacion [id_capacitacion=" + id_capacitacion + ", fecha=" + fecha + ", hora=" + hora
-				+ ", numasistentes=" + numasistentes + ", visitas_idvisita=" + visitas_idvisita + "]";
+				+ ", numasistentes=" + numasistentes + ", visitas_id_visita=" + visitas_id_visita + "]";
 	}
 	
 	
