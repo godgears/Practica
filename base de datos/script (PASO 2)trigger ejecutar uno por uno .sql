@@ -11,7 +11,6 @@ BEGIN
     END IF;
   END COLUMN_SEQUENCES;
 END;
-END;
 --Insertar uno por uno estos triggers
 
 CREATE or replace TRIGGER ASESORIAS_TRG 
